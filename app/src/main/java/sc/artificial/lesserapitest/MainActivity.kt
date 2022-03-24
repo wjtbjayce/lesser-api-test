@@ -133,9 +133,6 @@ class MainActivity : AppCompatActivity(), GazeAnalysisDelegate, SurfaceHolder.Ca
             mCameraDevice = camera
             try {
                 takePreview()
-
-                var bitmap = Bitmap.createBitmap(mWidth, mHeight, Bitmap.Config.ARGB_8888)
-
             } catch (e: CameraAccessException) {
                 e.printStackTrace()
             }
